@@ -1,0 +1,12 @@
+language: java
+jdk:
+- openjdk8
+
+addons:
+  sonarcloud:
+    organization: "dfalessicalpoly-github"
+    token:
+      secure: "51c78fe1939321d2eb80872ab85b15710e03f97a"
+script:
+- ant build
+- sonar-scanner
